@@ -12,11 +12,24 @@
 # Waveform Show
 * Configuration Write
 
-1. awvalid trigered, enable bram and send address
+1. `awvalid` trigered, enable bram and send address
 
-2. triger wready, send data
+2. trigger `wready`, send data
 
 ![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab3/waveform/Waveform0.png)
 
-* ap_start, ap_done
+* X stream in
 
+![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab3/waveform/Waveform1.png)
+
+1. trigger `ss_tready`
+
+* Y stream out
+
+![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab3/waveform/Waveform2.png)
+
+1. When `ss_tready` triggered, lock fsm state (counter_current_state) and send X stream to bram
+
+2. Read the original data (bram[0]), and read data at next cycle
+
+3. When `reg counter` = 10, trigger sm_tvalid and send Y stream out

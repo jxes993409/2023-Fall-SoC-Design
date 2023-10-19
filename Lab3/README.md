@@ -1,5 +1,6 @@
 # Synthesis Report
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
+| ---- | ---- | ---- | ---- | ---- | ---- |
 | Slice LUTs*             |  196 |     0 |          0 |     53200 |  0.37 |
 |   LUT as Logic          |  196 |     0 |          0 |     53200 |  0.37 |
 |   LUT as Memory         |    0 |     0 |          0 |     17400 |  0.00 |

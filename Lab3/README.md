@@ -10,8 +10,13 @@
 | F7 Muxes                |    0 |     0 |          0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     13300 |  0.00 |
 # Waveform Show
-* Configuration Write  
+* Configuration Write
+
 1. awvalid trigered, enable bram and send address
+
 2. triger wready, send data
 
 ![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab3/waveform/Waveform0.png)
+
+* ap_start, ap_done
+

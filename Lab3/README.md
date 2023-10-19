@@ -9,3 +9,6 @@
 |   Register as Latch     |  340 |     0 |          0 |    106400 |  0.32 |
 | F7 Muxes                |    0 |     0 |          0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |          0 |     13300 |  0.00 |
+# Waveform Show
+* Configuration Write
+![Configuration Write](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/LAB3/waveform/Waveform.png)

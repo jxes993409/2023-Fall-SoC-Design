@@ -11,4 +11,4 @@
 | F8 Muxes                |    0 |     0 |          0 |     13300 |  0.00 |
 # Waveform Show
 * Configuration Write
-![Configuration Write](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/LAB3/waveform/Waveform.png)
+![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/LAB3/waveform/Waveform0.png)

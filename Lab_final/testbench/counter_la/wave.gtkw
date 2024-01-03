@@ -1,0 +1,180 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Dec 20 13:21:12 2023
+[*]
+[dumpfile] "/home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-sdram/testbench/counter_la/counter_la_0.vcd"
+[dumpfile_mtime] "Wed Dec 20 06:52:03 2023"
+[dumpfile_size] 61750031
+[savefile] "/home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-sdram/testbench/counter_la/wave.gtkw"
+[timestart] 833106600
+[size] 1351 758
+[pos] -58 198
+*-17.000000 833270400 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] counter_la_tb.
+[treeopen] counter_la_tb.uut.
+[treeopen] counter_la_tb.uut.mprj.
+[treeopen] counter_la_tb.uut.mprj.mprj.
+[sst_width] 298
+[signals_width] 290
+[sst_expanded] 1
+[sst_vpaned_height] 334
+@200
+-mprj
+@28
+counter_la_tb.uut.mprj.mprj.wb_clk_i
+counter_la_tb.uut.mprj.mprj.wbs_cyc_i
+counter_la_tb.uut.mprj.mprj.wbs_stb_i
+counter_la_tb.uut.mprj.mprj.wbs_ack_o
+counter_la_tb.uut.mprj.mprj.valid
+@23
+counter_la_tb.uut.mprj.wbs_adr_i[31:0]
+@22
+counter_la_tb.checkbits[15:0]
+counter_la_tb.uut.mprj.mprj.wbs_adr_i[31:0]
+counter_la_tb.uut.mprj.mprj.wbs_dat_i[31:0]
+@c00022
+counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+@28
+(0)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(1)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(2)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(3)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(4)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(5)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(6)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(7)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(8)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(9)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(10)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(11)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(12)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(13)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(14)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(15)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(16)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(17)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(18)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(19)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(20)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(21)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(22)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(23)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(24)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(25)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(26)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(27)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(28)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(29)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(30)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+(31)counter_la_tb.uut.mprj.mprj.wbs_dat_o[31:0]
+@1401200
+-group_end
+@28
+counter_la_tb.uut.mprj.mprj.wbs_we_i
+counter_la_tb.uut.mprj.mprj.ctrl_in_valid
+counter_la_tb.uut.mprj.mprj.ctrl_in_valid_q
+counter_la_tb.uut.mprj.mprj.ctrl_out_valid
+@22
+counter_la_tb.uut.mprj.mprj.ctrl_addr[22:0]
+@200
+-
+-sdram_ctrl
+@28
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.clk
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.busy
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.ready_d
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.ready_q
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.in_valid
+@c00022
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+@28
+(0)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(1)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(2)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(3)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(4)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(5)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(6)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(7)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(8)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(9)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(10)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(11)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(12)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(13)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(14)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(15)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(16)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(17)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(18)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(19)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(20)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(21)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+(22)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr[22:0]
+@1401200
+-group_end
+@22
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_d[22:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.data_in[31:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.data_out[31:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.state_d[3:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.state_q[3:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.next_state_d[3:0]
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.next_state_q[3:0]
+@28
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.out_valid_d
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.out_valid_q
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.out_valid
+@c00022
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+@28
+(0)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(1)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(2)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(3)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(4)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(5)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(6)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(7)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(8)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(9)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(10)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(11)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(12)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(13)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(14)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(15)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(16)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(17)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(18)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(19)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(20)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(21)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+(22)counter_la_tb.uut.mprj.mprj.user_sdram_controller.addr_q[22:0]
+@1401200
+-group_end
+@c00024
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+@28
+(0)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(1)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(2)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(3)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(4)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(5)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(6)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(7)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(8)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(9)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(10)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(11)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+(12)counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_RA[12:0]
+@1401200
+-group_end
+@28
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_BA[1:0]
+@22
+counter_la_tb.uut.mprj.mprj.user_sdram_controller.Mapped_CA[7:0]
+[pattern_trace] 1
+[pattern_trace] 0

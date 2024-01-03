@@ -216,7 +216,7 @@ module counter_la_tb;
 	
 	initial begin
 		// wait(checkbits == 16'hAB45);
-		$display("LA Test uart started");
+		$display("%t, LA Test uart started", $time);
 		send_data_1;
 	end
 	
@@ -268,7 +268,7 @@ module counter_la_tb;
 		wait(checkbits == 16'hAB52);
 		$display("%t, LA Test fir passed", $time);
 		
-		#350000;
+		#450000;
 		$finish;
 	end
 	

@@ -23,7 +23,7 @@ void __attribute__ ( ( section ( ".mprjram" ) ) ) initfir()
 
 }
 
-int* __attribute__ ( ( section ( ".mm" ) ) ) fir()
+int* __attribute__ ( ( section ( ".mprjram" ) ) ) fir()
 {
 	initfir();
 	//write down your fir

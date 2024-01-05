@@ -12,6 +12,6 @@ In LabD, we put code in bank[0], bank[1], and put data in bank[2], bank[3].
 
 # Tip
 
-In ![setcions.lds](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/LabD/firmware/sections.lds), the original gcclib `<__mulsi3>` is in spiflash. It will take long time to access this library
+In [setcions.lds](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/LabD/firmware/sections.lds), the original gcclib `<__mulsi3>` is in spiflash. It will take long time to access this library
 
 Hence, comment `*(.text .stub .text.* .gnu.linkonce.t.*)` in `.text`, add `*libgcc.a:*(.text .text.*)` in `.mprjram` section.

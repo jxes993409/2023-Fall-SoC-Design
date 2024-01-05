@@ -6,4 +6,4 @@
 
 ## Lab4-2 - [Hardware FIR](https://github.com/jxes993409/2023-Spring-SoC-Design/tree/main/Lab4#lab-4-2)
 
-## Lab Final - [Workload Optimize](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab_final/README.md)
+## Lab Final - [Workload Optimize](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab_Final/README.md)

@@ -1,10 +1,8 @@
-# Lab6
-
-## Block design
+# Block design
 
 ![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab6/waveform/block.png)
 
-## Waveform show
+# Waveform show
 
 1. Block the wb signal except for `wb_addr[31:24] == 8'h38` (user)
 

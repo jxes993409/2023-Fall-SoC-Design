@@ -3,10 +3,10 @@
 ## Waveform Show
 
 1. WB read data from bram, and wait bram for 12T to ready.
-![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab3/waveform/Lab4-1/bram.png)
+![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab4/waveform/Lab4-1/bram.png)
 
 2. Send data to testbench by using mprj port
-![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab3/waveform/Lab4-1/mprj.png)
+![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab4/waveform/Lab4-1/mprj.png)
 
 ## FIR firmware code
 ```c=

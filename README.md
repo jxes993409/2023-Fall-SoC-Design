@@ -6,4 +6,6 @@
 
 ## Lab4-2 - [Hardware FIR](https://github.com/jxes993409/2023-Spring-SoC-Design/tree/main/Lab4#lab-4-2)
 
-## Lab Final - [Workload Optimize](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab_Final/README.md)
+## Lab5 - [Caravel FPGA](https://github.com/jxes993409/2023-Spring-SoC-Design/tree/main/Lab5)
+
+## Lab Final - [Workload Optimize](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab_Final)

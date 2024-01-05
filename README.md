@@ -1,3 +1,9 @@
 # 2023-Spring-SoC-Design
 
 ## Lab3 - [FIR Design](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab3/)
+
+## Lab4-1 - [Firmware FIR](https://github.com/jxes993409/2023-Spring-SoC-Design/tree/main/Lab4#lab-4-1)
+
+## Lab4-2 - [Hardware FIR](https://github.com/jxes993409/2023-Spring-SoC-Design/tree/main/Lab4#lab-4-2)
+
+## Lab Final - [Workload Optimize](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab_Final/README.md)

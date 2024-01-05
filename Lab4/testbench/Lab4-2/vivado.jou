@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Dec 26 00:05:51 2023
+# Process ID: 140973
+# Current directory: /home/bl605/SoC_Design/lab-exmem_fir/testbench/counter_la_fir
+# Command line: vivado
+# Log file: /home/bl605/SoC_Design/lab-exmem_fir/testbench/counter_la_fir/vivado.log
+# Journal file: /home/bl605/SoC_Design/lab-exmem_fir/testbench/counter_la_fir/vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 3398.034 MHz, CPU Physical cores: 8, Host memory: 33615 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-wlos_baseline/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr
+update_compile_order -fileset sources_1
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+current_run [get_runs impl_1_copy_1]
+set_property flow {Vivado Implementation 2022} [get_runs impl_1_copy_1]
+set_property strategy Performance_NetDelay_high [get_runs impl_1_copy_1]
+launch_runs impl_1_copy_1 -jobs 6
+wait_on_run impl_1_copy_1
+launch_runs impl_1_copy_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1_copy_1
+open_run impl_1_copy_1

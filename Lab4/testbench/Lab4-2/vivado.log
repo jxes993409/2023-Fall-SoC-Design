@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Dec 26 00:05:51 2023
+# Process ID: 140973
+# Current directory: /home/bl605/SoC_Design/lab-exmem_fir/testbench/counter_la_fir
+# Command line: vivado
+# Log file: /home/bl605/SoC_Design/lab-exmem_fir/testbench/counter_la_fir/vivado.log
+# Journal file: /home/bl605/SoC_Design/lab-exmem_fir/testbench/counter_la_fir/vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 3398.034 MHz, CPU Physical cores: 8, Host memory: 33615 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-wlos_baseline/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-1877] Auto incremental dir location '/home/tonyho/workspace_willy/caravel_fpga/project/vitis_prj/hls_read_romcode/D:/Caravel_Soc/vvd_caravel_fpga/vvd_caravel_fpga.srcs/utils_1/imports/synth_1' of run 'synth_1' is not writable, setting it to default location '/home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-wlos_baseline/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/utils_1/imports/synth_1'.
+INFO: [Project 1-1877] Auto incremental dir location '/home/tonyho/workspace_willy/caravel_fpga/project/vitis_prj/hls_read_romcode/D:/Caravel_Soc/vvd_caravel_fpga/vvd_caravel_fpga.srcs/utils_1/imports/impl_1' of run 'impl_1' is not writable, setting it to default location '/home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-wlos_baseline/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/utils_1/imports/impl_1'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-wlos_baseline/vivado/vitis_prj/hls_caravel_ps'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-wlos_baseline/vivado/vitis_prj/hls_output_pin'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-wlos_baseline/vivado/vitis_prj/hls_read_romcode'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 7667.836 ; gain = 152.480 ; free physical = 20449 ; free virtual = 27143
+update_compile_order -fileset sources_1
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+copy_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 7925.348 ; gain = 0.000 ; free physical = 17225 ; free virtual = 23997
+impl_1_copy_1
+current_run [get_runs impl_1_copy_1]
+impl_1_copy_1
+set_property flow {Vivado Implementation 2022} [get_runs impl_1_copy_1]
+set_property strategy Performance_NetDelay_high [get_runs impl_1_copy_1]
+launch_runs impl_1_copy_1 -jobs 6
+[Tue Dec 26 00:08:17 2023] Launched impl_1_copy_1...
+Run output will be captured here: /home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-wlos_baseline/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1_copy_1/runme.log
+launch_runs impl_1_copy_1 -to_step write_bitstream -jobs 6
+[Tue Dec 26 00:13:16 2023] Launched impl_1_copy_1...
+Run output will be captured here: /home/bl605/SoC_Design/caravel-soc_fpga-lab/lab-wlos_baseline/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1_copy_1/runme.log
+open_run impl_1_copy_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.16 . Memory (MB): peak = 7925.348 ; gain = 0.000 ; free physical = 16461 ; free virtual = 23305
+INFO: [Netlist 29-17] Analyzing 527 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8445.473 ; gain = 0.000 ; free physical = 15947 ; free virtual = 22791
+Restored from archive | CPU: 1.180000 secs | Memory: 15.836281 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 8445.473 ; gain = 0.000 ; free physical = 15947 ; free virtual = 22791
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8445.473 ; gain = 0.000 ; free physical = 15947 ; free virtual = 22792
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+open_run: Time (s): cpu = 00:00:36 ; elapsed = 00:00:27 . Memory (MB): peak = 8647.195 ; gain = 721.848 ; free physical = 15850 ; free virtual = 22697
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 26 01:39:38 2023...

@@ -12,4 +12,4 @@
 
 ## LabD - [SDRAM](https://github.com/jxes993409/2023-Spring-SoC-Design/tree/main/LabD)
 
-## Lab Final - [Workload Optimize SOC (WLOS)](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab_Final)
+<!-- ## Lab Final - [Workload Optimize SOC (WLOS)](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab_Final) --!>

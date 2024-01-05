@@ -8,4 +8,6 @@
 
 ## Lab5 - [Caravel FPGA](https://github.com/jxes993409/2023-Spring-SoC-Design/tree/main/Lab5)
 
+## Lab6 - [WorkLoad Optimize SOC (WLOS) Baseline](https://github.com/jxes993409/2023-Spring-SoC-Design/tree/main/Lab6)
+
 ## Lab Final - [Workload Optimize](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab_Final)

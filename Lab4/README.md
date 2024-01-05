@@ -46,14 +46,17 @@ int *__attribute__((section(".mprjram"))) fir()
 # Lab 4-2
 
 ## Block Diagram
+
 ![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab4/waveform/Lab4-2/block.png)
 
 ## Waveform Show
 
 1. Flag hang, use flag `hang` to stop fir until Y is recevied
+
 ![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab4/waveform/Lab4-2/hang.png)
 
 2. Use counter to count data out, `sm_tlast = 1` when counter == 64
+
 ![](https://github.com/jxes993409/2023-Spring-SoC-Design/blob/main/Lab4/waveform/Lab4-2/sm_tlast.png)
 
 ## Register address

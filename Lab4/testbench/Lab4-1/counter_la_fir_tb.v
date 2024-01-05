@@ -17,7 +17,7 @@
 
 `timescale 1 ns / 1 ps
 
-module counter_la_tb;
+module counter_la_fir_tb;
 	reg clock;
         reg RSTB;
 	reg CSB;
@@ -26,17 +26,11 @@ module counter_la_tb;
 
 	wire gpio;
 	wire uart_tx;
-	wire uart_rx;
-	reg tx_start;
-	reg [7:0] tx_data;
 	wire [37:0] mprj_io;
 	wire [15:0] checkbits;
-	wire tx_busy;
-	wire tx_clear_req;
 
 	assign checkbits  = mprj_io[31:16];
 	assign uart_tx = mprj_io[6];
-	assign mprj_io[5] = uart_rx;
 
 	always #12.5 clock <= (clock === 1'b0);
 
@@ -141,66 +135,12 @@ module counter_la_tb;
 
 	// assign mprj_io[3] = 1'b1;
 
-	reg signed [31:0] tap[0:10];
-
 	initial begin
-		tap[0]  =  32'd0;
-		tap[1]  = -32'd10;
-		tap[2]  = -32'd9;
-		tap[3]  =  32'd23;
-		tap[4]  =  32'd56;
-		tap[5]  =  32'd63;
-		tap[6]  =  32'd56;
-		tap[7]  =  32'd23;
-		tap[8]  = -32'd9;
-		tap[9]  = -32'd10;
-		tap[10] =  32'd0;
-	end
-
-	integer i, j;
-
-	// initial fir
-	initial begin
-		for (i = 0; i < 64; i = i + 1) begin
-			inputSignal[i] = i + 1;
-		end
-	end
-
-	reg signed [31:0] inputSignal[0:63];
-	reg signed [31:0] inputBuffer[0:63];
-	reg signed [31:0] goldenOutput[0:63];
-	// compute fir
-	initial begin
-		for (i = 0; i < 11; i = i + 1) begin
-			inputBuffer[i] = 0;
-		end
-		for (i = 0; i < 64; i = i + 1) begin
-			goldenOutput[i] = 0;
-			// shift data
-			inputBuffer[10] = inputBuffer[9];
-			inputBuffer[9] = inputBuffer[8];
-			inputBuffer[8] = inputBuffer[7];
-			inputBuffer[7] = inputBuffer[6];
-			inputBuffer[6] = inputBuffer[5];
-			inputBuffer[5] = inputBuffer[4];
-			inputBuffer[4] = inputBuffer[3];
-			inputBuffer[3] = inputBuffer[2];
-			inputBuffer[2] = inputBuffer[1];
-			inputBuffer[1] = inputBuffer[0];
-
-			inputBuffer[0] = inputSignal[i];
-			for (j = 0; j < 11; j = j + 1) begin
-				goldenOutput[i] = goldenOutput[i] + inputBuffer[j] * tap[j];
-			end
-		end
-	end
-
-	initial begin
-		$dumpfile("counter_la.vcd");
-		$dumpvars(0, counter_la_tb);
+		$dumpfile("counter_la_fir.vcd");
+		$dumpvars(0, counter_la_fir_tb);
 
 		// Repeat cycles of 1000 clock edges as needed to complete testbench
-		repeat (1000) begin
+		repeat (250) begin
 			repeat (1000) @(posedge clock);
 			// $display("+1000 cycles");
 		end
@@ -213,77 +153,27 @@ module counter_la_tb;
 		$display("%c[0m",27);
 		$finish;
 	end
-	
-	initial begin
-		// wait(checkbits == 16'hAB45);
-		$display("%t, LA Test uart started", $time);
-		send_data_1;
-	end
-	
+
 	initial begin
 		wait(checkbits == 16'hAB40);
-		$display("%t, LA matmul started", $time);
-		wait(checkbits == 16'h003E);
-		$display("%t, Call function matmul() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'h0044);
-		$display("%t, Call function matmul() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'h004A);
-		$display("%t, Call function matmul() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'h0050);
-		$display("%t, Call function matmul() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
+		$display("%t LA FIR started", $time);
+		//wait(checkbits == 16'hAB41);
+
+		//wait(checkbits == 16'd40);
+		//$display("Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x%x", checkbits);
+		//wait(checkbits == 16'd893);
+		//$display("Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x%x", checkbits);
+		//wait(checkbits == 16'd2541);
+		//$display("Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x%x", checkbits);
+		//wait(checkbits == 16'd2669);
+		//$display("Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x%x", checkbits);		
+
 		wait(checkbits == 16'hAB50);
-		$display("%t, LA matmul passed", $time);
-
-		wait(checkbits == 16'hAB41);
-		$display("%t, LA Test qsort started", $time);
-		wait(checkbits == 16'd40);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'd893);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'd2541);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'd2669);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'd3233);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'd4267);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'd4622);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'd5681);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'd6023);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'd9073);
-		$display("%t, Call function qsort() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		wait(checkbits == 16'hAB51);
-		$display("%t, LA Test qsort passed", $time);
-
-		wait(checkbits == 16'hAB42);
-		$display("%t, LA Test fir started", $time);
-		for (j = 0; j < 64; j = j + 1) begin
-			wait(checkbits == goldenOutput[j][15:0]);
-			$display("%t, Call function fir() in User Project SDRAM (mprjram, 0x38000000) return value passed, 0x%x", $time, checkbits);
-		end
-		wait(checkbits == 16'hAB52);
-		$display("%t, LA Test fir passed", $time);
-		
-		#450000;
+		$display("%t LA FIR passed", $time);
+		#10000;
 		$finish;
 	end
-	
-	task send_data_1;begin
-		@(posedge clock);
-		tx_start = 1;
-		tx_data = 61;
-		
-		#50;
-		wait(!tx_busy);
-		tx_start = 0;
-		$display("%t, tx complete 1", $time);
-		
-	end endtask
-	
+
 	initial begin
 		RSTB <= 1'b0;
 		CSB  <= 1'b1;		// Force CSB high
@@ -350,7 +240,7 @@ module counter_la_tb;
 	);
 
 	spiflash #(
-		.FILENAME("counter_la.hex")
+		.FILENAME("counter_la_fir.hex")
 	) spiflash (
 		.csb(flash_csb),
 		.clk(flash_clk),
@@ -362,12 +252,7 @@ module counter_la_tb;
 
 	// Testbench UART
 	tbuart tbuart (
-		.ser_rx(uart_tx),
-		.tx_start(tx_start),
-		.ser_tx(uart_rx),
-		.tx_data(tx_data),
-		.tx_busy(tx_busy),
-		.tx_clear_req(tx_clear_req)
+		.ser_rx(uart_tx)
 	);
 
 endmodule

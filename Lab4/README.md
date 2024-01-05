@@ -12,34 +12,34 @@
 ```c=
 void __attribute__((section(".mprjram"))) initfir()
 {
-	// initial your fir
-	for (int i = 0; i < N; i++)
-	{
-		outputsignal[i] = 0;
-		inputbuffer[i] = 0;
-	}
+  // initial your fir
+  for (int i = 0; i < N; i++)
+  {
+    outputsignal[i] = 0;
+    inputbuffer[i] = 0;
+  }
 }
 
 int *__attribute__((section(".mprjram"))) fir()
 {
-	initfir();
+  initfir();
 
-	for (int i = 0; i < N; i++)
-	{
+  for (int i = 0; i < N; i++)
+  {
     // shift tap data (inputbuffer)
-		for (int i = N - 1; i > 0; i--)
-		{
-			inputbuffer[i] = inputbuffer[i - 1];
-		}
-		inputbuffer[0] = inputsignal[i];
+    for (int i = N - 1; i > 0; i--)
+    {
+      inputbuffer[i] = inputbuffer[i - 1];
+    }
+    inputbuffer[0] = inputsignal[i];
 
     // do fir operation
-		for (int j = 0; j < N; j++)
-		{
-			outputsignal[i] += inputbuffer[j] * taps[j];
-		}
-	}
-	return outputsignal;
+    for (int j = 0; j < N; j++)
+    {
+      outputsignal[i] += inputbuffer[j] * taps[j];
+    }
+  }
+  return outputsignal;
 }
 ```
 

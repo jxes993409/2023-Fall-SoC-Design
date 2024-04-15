@@ -1,6 +1,6 @@
 # Lab Final
 
-![image](https://github.com/jxes993409/2023-Fall-SoC-Design/tree/main/Lab_Final/images/soc.jpg)
+![image](https://github.com/jxes993409/2023-Fall-SoC-Design/blob/main/Lab_Final/images/soc.jpg)
 
 ## Optimize task execution for faster execution time
 1. Uart interrupt testing
@@ -11,7 +11,7 @@
 
 ## SDRAM prefetch
 * From **12T** per data -> **6.25T** per data (50T per 8 data)
-![image](https://github.com/jxes993409/2023-Fall-SoC-Design/tree/main/Lab_Final/images/prefetch.png)
+![image](https://github.com/jxes993409/2023-Fall-SoC-Design/blob/main/Lab_Final/images/prefetch.png)
 ## Bank interleaved
 * Use section attribute to separate code and data into different banks
 
@@ -23,5 +23,5 @@
 
 | IJK method                                                                                      |                                           KIJ method                                            |
 | ----------------------------------------------------------------------------------------------- |:-----------------------------------------------------------------------------------------------:|
-| ![image](https://github.com/jxes993409/2023-Fall-SoC-Design/tree/main/Lab_Final/images/ijk.png) | ![image](https://github.com/jxes993409/2023-Fall-SoC-Design/tree/main/Lab_Final/images/kij.png) |
+| ![image](https://github.com/jxes993409/2023-Fall-SoC-Design/blob/main/Lab_Final/images/ijk.png) | ![image](https://github.com/jxes993409/2023-Fall-SoC-Design/blob/main/Lab_Final/images/kij.png) |
 
